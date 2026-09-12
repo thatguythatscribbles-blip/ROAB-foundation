@@ -1,129 +1,182 @@
-// ROAB ARG Website - Script
-// Phase 1: Normal public website
-// Phase 2: Anomaly discovery begins with Newton
+// ROAB ARG Website - Canon Data
+// Phase 1: Normal public-facing ROAB website
+// Phase 2: Triggered by password access to THE GAP archive
 
-// ===== DATA =====
+// ===== CANONICAL PERSONNEL DATABASE =====
 
 const personnelDatabase = [
     {
-        name: "Dr. James Newton",
+        fullName: "Ivo Newton",
         role: "Senior Researcher",
-        department: "Anomaly Research",
+        department: "Behavioral Analysis",
         status: "ACTIVE",
         fileId: "PERS-1985-042",
-        date: "1985-03-10"
+        dateEmployed: "1985-03-10",
+        clearance: "Level 4"
     },
     {
-        name: "Dr. Helen Athena",
-        role: "Department Head",
-        department: "Behavioral Psychology",
-        status: "ACTIVE",
-        fileId: "PERS-1968-015",
-        date: "1968-01-05"
-    },
-    {
-        name: "Dr. Marcus Fate",
-        role: "Research Coordinator",
-        department: "Case Analysis",
-        status: "ACTIVE",
-        fileId: "PERS-1975-031",
-        date: "1975-06-20"
-    },
-    {
-        name: "Dr. Robert Professor",
-        role: "Chief Researcher",
-        department: "Anomaly Research",
-        status: "ACTIVE",
-        fileId: "PERS-1952-001",
-        date: "1952-07-15"
-    },
-    {
-        name: "Emily Chen",
+        fullName: "Emily Enferd",
         role: "Research Assistant",
         department: "Data Management",
         status: "ACTIVE",
         fileId: "PERS-1985-089",
-        date: "1985-09-01"
+        dateEmployed: "1985-09-01",
+        clearance: "Level 2"
+    },
+    {
+        fullName: "Matteo Simmons",
+        role: "Head of Security",
+        department: "Security & Containment",
+        status: "ACTIVE",
+        fileId: "PERS-1980-015",
+        dateEmployed: "1980-05-15",
+        clearance: "Level 5"
+    },
+    {
+        fullName: "Dr. Sarah Voss",
+        role: "Research Scientist",
+        department: "Biological Research",
+        status: "ACTIVE",
+        fileId: "PERS-1975-031",
+        dateEmployed: "1975-06-20",
+        clearance: "Level 3"
+    },
+    {
+        fullName: "Dr. Marcus Webb",
+        role: "Research Coordinator",
+        department: "Phenomenology",
+        status: "ACTIVE",
+        fileId: "PERS-1982-008",
+        dateEmployed: "1982-01-10",
+        clearance: "Level 3"
+    },
+    {
+        fullName: "James Caldwell",
+        role: "Field Operations Director",
+        department: "Field Operations",
+        status: "ACTIVE",
+        fileId: "PERS-1978-044",
+        dateEmployed: "1978-11-03",
+        clearance: "Level 4"
+    },
+    {
+        fullName: "Dr. Helena Price",
+        role: "Department Head",
+        department: "Behavioral Analysis",
+        status: "ACTIVE",
+        fileId: "PERS-1968-015",
+        dateEmployed: "1968-01-05",
+        clearance: "Level 5"
+    },
+    {
+        fullName: "David Torres",
+        role: "Facility Manager",
+        department: "Security & Containment",
+        status: "ACTIVE",
+        fileId: "PERS-1981-052",
+        dateEmployed: "1981-04-12",
+        clearance: "Level 3"
     }
 ];
 
+// ===== PUBLIC ARCHIVE ENTRIES =====
+
 const archiveEntries = [
     {
-        title: "Behavioral Study 1952",
+        title: "Behavioral Study 1952 - Foundational Report",
         category: "RESEARCH",
         fileId: "ARC-1952-001",
         date: "1952-08-10",
         restricted: false,
-        content: `BEHAVIOURAL STUDY PRELIMINARY REPORT
+        content: `BEHAVIORAL STUDY PRELIMINARY REPORT
 
 FILE ID: ARC-1952-001
 DATE: 1952-08-10
 CLASSIFICATION: OPEN
+CATEGORY: FOUNDATIONAL RESEARCH
 
-This document contains preliminary observations regarding abnormal behavioral patterns in test subjects.
+This document contains preliminary observations regarding abnormal behavioral patterns in test subjects under controlled conditions.
 
 All subjects exhibited consistent responses to controlled stimuli.
 Results indicate patterns consistent with established psychological models.
+Biological response variations noted and documented.
 
-No anomalies detected in this phase of research.
+CONCLUSION:
+No anomalies detected in this phase of research. Standard behavioral theory applies to all documented cases.
 
-Prepared by: Dr. Robert Professor`
+Prepared by: Research Team
+Department: Behavioral Analysis`
     },
     {
-        title: "Personnel Records - Newton",
-        category: "PERSONNEL",
+        title: "Personnel Records Database Index",
+        category: "ADMINISTRATIVE",
         fileId: "ARC-1985-023",
         date: "1985-03-15",
         restricted: false,
-        content: `PERSONNEL FILE
+        content: `PERSONNEL DATABASE INDEX
 
-FULL NAME: Dr. James Newton
-POSITION: Senior Researcher
-DEPARTMENT: Anomaly Research
-EMPLOYED: 1985-03-10
-STATUS: ACTIVE
+FILE ID: ARC-1985-023
+DATE: 1985-03-15
+CLASSIFICATION: INTERNAL
 
-Dr. Newton joined ROAB in March 1985.
-Specialization: Behavioral anomalies and psychological phenomena.
-Clearance Level: 4
+ROAB maintains personnel records for all current and past employees. Individual files contain:
 
-No incidents reported.
-Standard performance reviews submitted.
+- Full name and identification
+- Department assignment
+- Employment date
+- Current status
+- Clearance level
+- Assignment history
+- Performance evaluations
 
-Current Assignment: Anomaly Research Division`
+All personnel records are maintained in accordance with internal protocols.
+Access to individual records is restricted to authorized personnel only.
+
+For detailed information on specific employees, submit request through proper channels.`
     },
     {
-        title: "Archive Index",
+        title: "Archive Index - Standard Collections",
         category: "ADMINISTRATIVE",
         fileId: "ARC-1990-001",
         date: "1990-01-01",
         restricted: false,
-        content: `ARCHIVE INDEX - STANDARD ENTRIES
+        content: `ARCHIVE INDEX - PUBLIC COLLECTIONS
 
 FILE ID: ARC-1990-001
 DATE: 1990-01-01
+CLASSIFICATION: OPEN
 
-The following archives are available through the public database:
+The following archive collections are available through public access:
 
-- Behavioral Research (1952-Present)
-- Personnel Records (Standard)
-- Research Documentation
-- Administrative Reports
-- Historical Records
+- Foundational Behavioral Research (1952-1990)
+- Field Investigation Reports (Declassified)
+- Biographical Research Documentation
+- Administrative Documentation
+- Historical Organization Records
+- Research Program Summaries
 
-For restricted archives, proper authorization is required.
+RESTRICTED COLLECTIONS:
 
-Access requests should be submitted through official channels.`
+The following collections require appropriate authorization:
+
+- Current Active Research Files
+- Ongoing Investigation Records
+- Personnel Security Files
+- Sensitive Phenomenological Data
+
+Access requests for restricted archives should be submitted through official channels with proper justification and clearance documentation.
+
+Maintained by: Data Management Department`
     },
     {
         title: "THE GAP",
         category: "RESTRICTED",
         fileId: "ARC-1990-SEALED",
-        date: "UNKNOWN",
+        date: "[UNKNOWN]",
         restricted: true,
         requiresPassword: true,
         password: "NEWTON",
-        content: null // Will be revealed after password
+        content: null
     }
 ];
 
@@ -134,8 +187,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loadPersonnelDatabase();
     loadArchives();
     setupModals();
-    
-    // Rare dynamic changes for ARG immersion
     scheduleAnomalies();
 });
 
@@ -154,13 +205,11 @@ function initializeNavigation() {
 }
 
 function showSection(sectionName) {
-    // Hide all sections
     const sections = document.querySelectorAll('.content-section');
     sections.forEach(section => {
         section.classList.remove('active');
     });
     
-    // Show selected section
     const selectedSection = document.getElementById(sectionName + '-section');
     if (selectedSection) {
         selectedSection.classList.add('active');
@@ -178,18 +227,13 @@ function loadPersonnelDatabase() {
         const item = document.createElement('div');
         item.className = 'personnel-item';
         item.innerHTML = `
-            <div class="personnel-name">${person.name}</div>
+            <div class="personnel-name">${person.fullName}</div>
             <div class="personnel-role">${person.role} | ${person.department}</div>
             <span class="personnel-status">${person.status}</span>
         `;
         
         item.addEventListener('click', () => {
-            // If clicking Newton, show both normal and anomalous versions
-            if (person.name.includes('Newton')) {
-                showPersonnelDetail(person);
-            } else {
-                showPersonnelDetail(person);
-            }
+            showPersonnelDetail(person);
         });
         
         personnelList.appendChild(item);
@@ -200,37 +244,23 @@ function showPersonnelDetail(person) {
     const modal = document.getElementById('documentModal');
     const container = document.getElementById('documentContainer');
     
-    // Build personnel document
     let content = `PERSONNEL FILE
 
-FULL NAME: ${person.name}
-ROLE: ${person.role}
+FULL NAME: ${person.fullName}
+POSITION: ${person.role}
 DEPARTMENT: ${person.department}
-FILE ID: ${person.fileId}
-DATE FILED: ${person.date}
+EMPLOYED: ${person.dateEmployed}
+CLEARANCE LEVEL: ${person.clearance}
 STATUS: ${person.status}
 
-Standard employment record.`;
-    
-    // Special case for Newton - hint at the anomaly
-    if (person.name.includes('Newton')) {
-        content += `
-
---- ADDITIONAL NOTE ---
-
-Note: Personnel database shows Newton status as ACTIVE.
-However, cross-reference check detected additional records.
-Verify against supplementary archives.
-
-System message: Multiple records exist for this individual.`;
-    }
+Standard employment record maintained in accordance with ROAB personnel protocols.`;
     
     container.innerHTML = `
         <div class="document-header">
-            <div class="document-title">${person.name} - Personnel File</div>
+            <div class="document-title">${person.fullName}</div>
             <div class="document-meta">
                 <div>File ID: ${person.fileId}</div>
-                <div>Date: ${person.date}</div>
+                <div>Date Employed: ${person.dateEmployed}</div>
             </div>
         </div>
         <div class="document-content">${content}</div>
@@ -328,7 +358,6 @@ function checkPassword(entry, input) {
     const error = document.getElementById('passwordError');
     
     if (input.toUpperCase() === entry.password) {
-        // Correct password - reveal Phase 2 content
         document.getElementById('passwordModal').style.display = 'none';
         revealPhase2();
     } else {
@@ -337,10 +366,9 @@ function checkPassword(entry, input) {
     }
 }
 
-// ===== PHASE 2 - ANOMALY REVELATION =====
+// ===== PHASE 2 - RESTRICTED ACCESS GRANTED =====
 
 function revealPhase2() {
-    // Update navigation with new sections
     const nav = document.getElementById('mainNav');
     const newNav = `
         <ul class="nav-list">
@@ -350,51 +378,43 @@ function revealPhase2() {
             <li><a href="#" data-section="personnel">PERSONNEL</a></li>
             <li><a href="#" data-section="contact">CONTACT</a></li>
             <li><a href="#" data-section="archives">ARCHIVES</a></li>
-            <li style="color: #ff5555; font-weight: 700;">[TRIALS]</li>
-            <li style="color: #ff5555; font-weight: 700;">[THE GAP]</li>
+            <li style="border-left: 1px solid #00aa00; margin-left: 15px; padding-left: 15px;">[TRIALS]</li>
             <li style="color: #ff5555; font-weight: 700;">[INCIDENT REPORTS]</li>
         </ul>
     `;
     nav.innerHTML = newNav;
     initializeNavigation();
     
-    // Show revelation document
-    showPhase2Document();
-}
-
-function showPhase2Document() {
     const modal = document.getElementById('documentModal');
     const container = document.getElementById('documentContainer');
     
     container.innerHTML = `
         <div class="document-header">
-            <div class="document-title">AUTHENTICATION GRANTED</div>
+            <div class="document-title">AUTHORIZATION GRANTED</div>
             <div class="document-meta">
-                <div>File ID: INTERNAL-ROAB</div>
-                <div>Date: [CURRENT]</div>
+                <div>Status: RESTRICTED ACCESS ENABLED</div>
+                <div>Timestamp: [CURRENT]</div>
             </div>
         </div>
-        <div class="document-content">ACCESS TO RESTRICTED ARCHIVE GRANTED.
+        <div class="document-content">You have gained access to restricted ROAB archives.
 
 The following materials are now available:
 
 - TRIALS DATABASE
 - THE GAP RECORDS
 - INCIDENT REPORTS
-- CLASSIFIED PERSONNEL FILES
+- CLASSIFIED RESEARCH FILES
 - ANOMALY DOCUMENTATION
-
-You have discovered Phase 2 of the ROAB archive system.
 
 Proceed with investigation.
 
 --- SYSTEM NOTICE ---
 
-WARNING: Some records may contain contradictory information.
-This is not an error.
-All records are accurate to their respective contexts.
+WARNING: Some records may contain inconsistent information.
+All records are maintained as documented.
+Cross-reference carefully.
 
-Investigate carefully.</div>
+Access is logged.</div>
     `;
     
     modal.style.display = 'flex';
@@ -421,43 +441,26 @@ function setupModals() {
     });
 }
 
-// ===== ANOMALIES - RARE DYNAMIC CHANGES =====
+// ===== RARE ANOMALIES =====
 
 function scheduleAnomalies() {
-    // Rare chance of anomalies appearing
-    // This creates the sense that the website itself is affected
-    
-    // Every few minutes, possibly change something subtle
     setInterval(() => {
-        if (Math.random() < 0.02) { // 2% chance
+        if (Math.random() < 0.02) {
             triggerSubtleAnomaly();
         }
-    }, 60000); // Check every minute
+    }, 60000);
 }
 
 function triggerSubtleAnomaly() {
     const anomalies = [
         () => {
-            // Change a personnel record slightly
             const items = document.querySelectorAll('.personnel-item');
             if (items.length > 0) {
                 const randomItem = items[Math.floor(Math.random() * items.length)];
-                // Add a very subtle visual glitch
                 randomItem.style.opacity = '0.95';
                 setTimeout(() => {
                     randomItem.style.opacity = '1';
                 }, 1000);
-            }
-        },
-        () => {
-            // Subtle text change
-            const footer = document.querySelector('.footer-text');
-            if (footer) {
-                const original = footer.textContent;
-                footer.textContent = 'RECORDS INCONSISTENCY DETECTED - SYSTEM RESOLVING';
-                setTimeout(() => {
-                    footer.textContent = original;
-                }, 2000);
             }
         }
     ];
@@ -492,7 +495,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // ===== KEYBOARD SHORTCUTS =====
 
 document.addEventListener('keydown', function(e) {
-    // ESC to close modals
     if (e.key === 'Escape') {
         document.getElementById('documentModal').style.display = 'none';
         document.getElementById('passwordModal').style.display = 'none';
