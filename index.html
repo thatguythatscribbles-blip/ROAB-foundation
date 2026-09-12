@@ -3,133 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROAB Foundation - Retro Archives</title>
+    <title>ROAB - Research Of Abnormal Behaviour</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header class="header">
             <div class="header-top">
-                <h1 class="site-title">ROAB FOUNDATION</h1>
-                <div class="classification">[ CLASSIFIED ]</div>
+                <h1 class="site-title">ROAB</h1>
+                <p class="site-subtitle">Research Of Abnormal Behaviour</p>
             </div>
-            <div class="header-line">══════════════════════════════════════════════════════════</div>
-            <nav class="navigation">
+            <div class="header-line">════════════════════════════════════════════════════════════════════════════════════════════════════</div>
+            <nav class="navigation" id="mainNav">
                 <ul class="nav-list">
-                    <li><a href="#archives">ARCHIVES</a></li>
-                    <li><a href="#terminals">TERMINALS</a></li>
-                    <li><a href="#documents">DOCUMENTS</a></li>
-                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#" data-section="about">ABOUT</a></li>
+                    <li><a href="#" data-section="departments">DEPARTMENTS</a></li>
+                    <li><a href="#" data-section="research">RESEARCH</a></li>
+                    <li><a href="#" data-section="personnel">PERSONNEL</a></li>
+                    <li><a href="#" data-section="contact">CONTACT</a></li>
+                    <li><a href="#" data-section="archives">ARCHIVES</a></li>
                 </ul>
             </nav>
-            <div class="header-line">══════════════════════════════════════════════════════════</div>
+            <div class="header-line">════════════════════════════════════════════════════════════════════════════════════════════════════</div>
         </header>
 
-        <main class="main-content">
-            <section class="welcome-section">
-                <h2 class="section-title">WELCOME TO ROAB</h2>
-                <p class="section-description">
-                    This archive contains historical records from the Research and Observation Archives Bureau.
-                    All documents are classified and maintained in their original digital format.
+        <main class="main-content" id="mainContent">
+            <!-- ABOUT SECTION -->
+            <section id="about-section" class="content-section active">
+                <h2 class="section-title">ABOUT ROAB</h2>
+                <p class="section-text">
+                    The Research Of Abnormal Behaviour (ROAB) Foundation is a premier research institution dedicated to studying unusual and atypical behavioral patterns across multiple domains of human experience.
                 </p>
-                <div class="status-box">
-                    <span class="status-label">STATUS:</span>
-                    <span class="status-active">OPERATIONAL</span>
-                </div>
-            </section>
-
-            <section id="archives" class="archives-section">
-                <h2 class="section-title">ARCHIVES</h2>
-                <div class="archive-list">
-                    <div class="archive-item">
-                        <span class="file-number">[FILE-001]</span>
-                        <span class="file-date">1985-03-15</span>
-                        <span class="file-title">Terminal Access Protocol</span>
-                        <span class="file-status">SEALED</span>
-                    </div>
-                    <div class="archive-item">
-                        <span class="file-number">[FILE-002]</span>
-                        <span class="file-date">1987-07-22</span>
-                        <span class="file-title">Database Architecture</span>
-                        <span class="file-status">SEALED</span>
-                    </div>
-                    <div class="archive-item">
-                        <span class="file-number">[FILE-003]</span>
-                        <span class="file-date">1990-11-08</span>
-                        <span class="file-title">System Configuration</span>
-                        <span class="file-status">SEALED</span>
-                    </div>
-                </div>
-            </section>
-
-            <section id="terminals" class="terminals-section">
-                <h2 class="section-title">TERMINAL INTERFACE</h2>
-                <div class="terminal-box">
-                    <div class="terminal-header">ROAB_SYS_v3.2.1</div>
-                    <div class="terminal-content">
-                        <div class="terminal-line">$ SYSTEM STATUS: ONLINE</div>
-                        <div class="terminal-line">$ CONNECTED USERS: 1</div>
-                        <div class="terminal-line">$ ARCHIVE ACCESS LEVEL: GRANTED</div>
-                        <div class="terminal-line">$ LAST BACKUP: 1992-05-10</div>
-                        <div class="terminal-line blinking">$ _</div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="documents" class="documents-section">
-                <h2 class="section-title">DOCUMENT REGISTRY</h2>
-                <div class="doc-table">
-                    <div class="doc-row doc-header">
-                        <div class="doc-col">FILE ID</div>
-                        <div class="doc-col">CATEGORY</div>
-                        <div class="doc-col">DATE</div>
-                        <div class="doc-col">STATUS</div>
-                    </div>
-                    <div class="doc-row">
-                        <div class="doc-col">REC-101</div>
-                        <div class="doc-col">RESEARCH</div>
-                        <div class="doc-col">1985-01-10</div>
-                        <div class="doc-col">ARCHIVED</div>
-                    </div>
-                    <div class="doc-row">
-                        <div class="doc-col">REC-102</div>
-                        <div class="doc-col">ANALYSIS</div>
-                        <div class="doc-col">1986-05-22</div>
-                        <div class="doc-col">ARCHIVED</div>
-                    </div>
-                    <div class="doc-row">
-                        <div class="doc-col">REC-103</div>
-                        <div class="doc-col">REPORT</div>
-                        <div class="doc-col">1990-12-15</div>
-                        <div class="doc-col">ARCHIVED</div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="about" class="about-section">
-                <h2 class="section-title">ABOUT THIS ARCHIVE</h2>
-                <p>
-                    The ROAB Foundation maintains historical digital records in their original format.
-                    This interface provides access to archived documents, terminal logs, and system information
-                    from the golden age of computing.
+                <p class="section-text">
+                    Founded in 1952, ROAB maintains a comprehensive database of behavioral anomalies, psychological phenomena, and documented cases of unusual human responses to environmental stimuli.
                 </p>
-                <p>
-                    All materials are preserved exactly as they appeared on vintage computer systems,
-                    maintaining the authentic typewriter aesthetic of the era.
+                <p class="section-text">
+                    Our mission is to advance understanding of human behavior through rigorous scientific methodology and peer-reviewed research.
                 </p>
-                <div class="footer-info">
-                    <p class="footer-line">ROAB FOUNDATION ARCHIVE SYSTEM v1.0</p>
-                    <p class="footer-line">EST. 1984 | MAINTAINED SINCE 1985</p>
+                <div class="info-box">
+                    <span class="label">ORGANIZATION STATUS:</span>
+                    <span class="value">ACTIVE</span>
                 </div>
             </section>
+
+            <!-- DEPARTMENTS SECTION -->
+            <section id="departments-section" class="content-section">
+                <h2 class="section-title">DEPARTMENTS</h2>
+                <div class="dept-grid">
+                    <div class="dept-card">
+                        <h3 class="dept-name">BEHAVIORAL PSYCHOLOGY</h3>
+                        <p class="dept-desc">Study of abnormal behavioral patterns and psychological responses</p>
+                    </div>
+                    <div class="dept-card">
+                        <h3 class="dept-name">ANOMALY RESEARCH</h3>
+                        <p class="dept-desc">Investigation of documented behavioral anomalies and irregular phenomena</p>
+                    </div>
+                    <div class="dept-card">
+                        <h3 class="dept-name">CASE ANALYSIS</h3>
+                        <p class="dept-desc">Comprehensive review and documentation of significant behavioral cases</p>
+                    </div>
+                    <div class="dept-card">
+                        <h3 class="dept-name">DATA MANAGEMENT</h3>
+                        <p class="dept-desc">Archival and database maintenance for research materials</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESEARCH SECTION -->
+            <section id="research-section" class="content-section">
+                <h2 class="section-title">CURRENT RESEARCH</h2>
+                <div class="research-list">
+                    <div class="research-item">
+                        <span class="research-code">[RES-1952-001]</span>
+                        <span class="research-title">Behavioral Anomalies in Controlled Environments</span>
+                        <span class="research-status">ONGOING</span>
+                    </div>
+                    <div class="research-item">
+                        <span class="research-code">[RES-1968-047]</span>
+                        <span class="research-title">Psychological Response Patterns to Stimulus Variation</span>
+                        <span class="research-status">ONGOING</span>
+                    </div>
+                    <div class="research-item">
+                        <span class="research-code">[RES-1985-023]</span>
+                        <span class="research-title">Neurological Factors in Behavioral Anomalies</span>
+                        <span class="research-status">ACTIVE</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PERSONNEL SECTION -->
+            <section id="personnel-section" class="content-section">
+                <h2 class="section-title">PERSONNEL DATABASE</h2>
+                <div class="search-box">
+                    <input type="text" id="personnelSearch" placeholder="Search personnel..." class="search-input">
+                </div>
+                <div class="personnel-list" id="personnelList">
+                    <!-- Personnel will be loaded here -->
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section id="contact-section" class="content-section">
+                <h2 class="section-title">CONTACT</h2>
+                <div class="contact-info">
+                    <p><span class="label">ADDRESS:</span> Research Building 7, Administrative Sector</p>
+                    <p><span class="label">PHONE:</span> [RESTRICTED]</p>
+                    <p><span class="label">INQUIRY PROTOCOL:</span> Submit formal documentation through official channels</p>
+                </div>
+            </section>
+
+            <!-- ARCHIVES SECTION -->
+            <section id="archives-section" class="content-section">
+                <h2 class="section-title">ARCHIVE RECORDS</h2>
+                <div class="archives-list" id="archivesList">
+                    <!-- Archive entries will be loaded here -->
+                </div>
+            </section>
+
         </main>
 
+        <!-- MODAL FOR DOCUMENT VIEWING -->
+        <div id="documentModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">[X]</button>
+                <div class="document-container" id="documentContainer">
+                    <!-- Document content will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- PASSWORD PROMPT MODAL -->
+        <div id="passwordModal" class="modal" style="display: none;">
+            <div class="modal-content password-prompt">
+                <h2 class="modal-title">ACCESS REQUIRED</h2>
+                <p class="modal-text">This archive requires authorization.</p>
+                <input type="password" id="passwordInput" placeholder="Enter authorization code..." class="password-input">
+                <button id="passwordSubmit" class="submit-button">AUTHORIZE</button>
+                <button id="passwordCancel" class="cancel-button">CANCEL</button>
+                <p class="error-message" id="passwordError" style="display: none;"></p>
+            </div>
+        </div>
+
         <footer class="footer">
-            <div class="footer-line">══════════════════════════════════════════════════════════</div>
-            <p class="footer-text">ROAB FOUNDATION | DIGITAL ARCHIVE | RETRO COMPUTING HERITAGE</p>
-            <p class="footer-text">All content preserved in original format</p>
-            <div class="footer-line">══════════════════════════════════════════════════════════</div>
+            <div class="footer-line">════════════════════════════════════════════════════════════════════════════════════════════════════</div>
+            <p class="footer-text">ROAB FOUNDATION | RESEARCH OF ABNORMAL BEHAVIOUR | EST. 1952</p>
+            <p class="footer-text">All records maintained in accordance with data protection protocols</p>
+            <div class="footer-line">════════════════════════════════════════════════════════════════════════════════════════════════════</div>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
