@@ -31,51 +31,6 @@ const personnelDatabase = [
         fileId: "PERS-1980-015",
         dateEmployed: "1980-05-15",
         clearance: "Level 5"
-    },
-    {
-        fullName: "Dr. Sarah Voss",
-        role: "Research Scientist",
-        department: "Biological Research",
-        status: "ACTIVE",
-        fileId: "PERS-1975-031",
-        dateEmployed: "1975-06-20",
-        clearance: "Level 3"
-    },
-    {
-        fullName: "Dr. Marcus Webb",
-        role: "Research Coordinator",
-        department: "Phenomenology",
-        status: "ACTIVE",
-        fileId: "PERS-1982-008",
-        dateEmployed: "1982-01-10",
-        clearance: "Level 3"
-    },
-    {
-        fullName: "James Caldwell",
-        role: "Field Operations Director",
-        department: "Field Operations",
-        status: "ACTIVE",
-        fileId: "PERS-1978-044",
-        dateEmployed: "1978-11-03",
-        clearance: "Level 4"
-    },
-    {
-        fullName: "Dr. Helena Price",
-        role: "Department Head",
-        department: "Behavioral Analysis",
-        status: "ACTIVE",
-        fileId: "PERS-1968-015",
-        dateEmployed: "1968-01-05",
-        clearance: "Level 5"
-    },
-    {
-        fullName: "David Torres",
-        role: "Facility Manager",
-        department: "Security & Containment",
-        status: "ACTIVE",
-        fileId: "PERS-1981-052",
-        dateEmployed: "1981-04-12",
-        clearance: "Level 3"
     }
 ];
 
